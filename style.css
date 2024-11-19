@@ -1,0 +1,225 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    /* background-image: url("images/BG2.png"); */
+    background-attachment: fixed;
+    color: black;
+    font-family: "Chakra Petch", sans-serif;
+    background-color: #ccc6c6f2;
+
+}
+
+nav {
+    /* background-color: #daa520b2; */
+    /* background-color: #ffffff42; */
+    background-color: #ccc6c642;
+    /* height: 200px; */
+    height: 109px;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index:300;
+    backdrop-filter: blur(2px);
+
+}
+
+    nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin-top: 48px;
+    text-transform: uppercase;
+}
+ nav ul li a {
+    text-decoration: none;
+    color:black;
+    font-weight: 600;
+}
+nav ul li a:hover{
+color:grey;
+}
+.espanyol, .izquierda {
+    position:absolute;
+    right: 88px;
+    top:11px;
+}
+.derecha {
+    position: absolute;
+    right: 60px;
+    top: 11px;
+}
+.final {
+    position: absolute;
+    right: 33px;
+    top: 11px;
+}
+ .izquierda a, .derecha a, .final a{
+    text-decoration: none;
+    color:rgba(64, 56, 56, 0.73);
+}
+ .izquierda a:hover, .derecha a:hover, .final a:hover{
+    color: rgba(25, 134, 111, 0.753);
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+main{
+    height: 100vh;
+    margin-top: 376px;
+    margin-left: 100px;
+    overflow-x:scroll;
+}
+
+footer{
+    position: relative;
+    height: 80px;   
+    /* background-color: #efd89e; */
+    background-color: #c4bcbc;
+    width: 100%;
+    /* position: fixed; */
+    /* z-index: 300; */
+    /* bottom: 0;  */
+    /* backdrop-filter: blur(2px); */
+}
+h1, p{
+    color: black;
+}
+
+
+.copy{
+    
+    margin-left: 54px;
+    bottom: 27px;
+    position: absolute;
+}
+
+/*--work---*/
+
+
+
+.portada, .textportada{
+    max-width: 700px;
+    position: relative;
+    font-weight: 600;
+}
+.textportada span{
+    font-weight:300;
+}
+.portada img{
+    width: 100%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+     overflow-x:scroll;
+}
+.trabajo{
+    display: flex;
+    flex-direction: column;
+    margin: 50px 30%;
+}
+.title {
+    margin: 130px 30% 27px;
+}
+.thisisanna, .contact{
+    margin-left: 16vw;
+    margin-right: 2vw;
+    
+}
+.thisisanna h2{
+    margin-bottom: 3px;
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 99%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #fff;
+}
+.overlay.kleine{
+    background-color:#40bb6a;
+}
+.overlay.miri{
+    background-color: #134998;
+}
+
+.portada:hover .overlay {
+     opacity: 0.8;
+}
+
+.contact a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    margin-left: 4px;
+}
+.contact a:hover {
+    color: rgba(25, 134, 111, 0.753);
+}
+.datos {
+    display:flex;
+    flex-flow: wrap;
+}
+
+
+@media (max-width: 931px){
+    .thisisanna{
+        margin-left: 10vw;
+    }
+}
+
+
+@media (max-width: 810px){
+    nav ul {
+        margin-top: 77px;   
+    }
+    main{
+        margin-left:initial;
+        margin-top: 263px;
+    }
+    .thisisanna{
+    margin-top: 7%;
+    text-align: center;
+    margin-right: 10%;
+    margin-left: 10%;
+    }
+    .thisisanna h1{
+        margin-bottom: 26px;
+    }
+    .thisisanna h2{
+        margin-bottom: 30px;
+    }
+    .thisisanna p{
+        margin-bottom: 17px;
+    }
+    .trabajo{
+        margin: 39px 7%;
+    }
+    .title{
+        margin-top: 157px;
+        margin-bottom: 27px;
+        margin-right: auto;
+        margin-left: auto;
+
+    }
+}
+
+
+
+
+
