@@ -157,6 +157,9 @@ h1, p{
 .overlay.miri{
     background-color: #134998;
 }
+.overlay.silvia{
+    background-color: #aab41a94;
+}
 
 .portada:hover .overlay {
      opacity: 0.8;
