@@ -164,6 +164,15 @@ h1, p{
 .overlay.silvia{
     background-color: #aab41a94;
 }
+.overlay.aupache{
+    background-color: #c6b657b2;
+}
+.overlay.jo{
+    background-color: #000000a6;
+}
+.overlay.silvia{
+    background-color: #ba5c67b2;
+}
 
 .portada:hover .overlay {
      opacity: 0.8;
