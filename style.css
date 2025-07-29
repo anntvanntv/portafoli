@@ -173,7 +173,9 @@ h1, p{
 .overlay.silvia{
     background-color: #ba5c67b2;
 }
-
+.overlay.comic{
+    background-color: #b6b5b9;
+}
 .portada:hover .overlay {
      opacity: 0.8;
 }
